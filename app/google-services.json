@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "687641439921",
+    "firebase_url": "https://movieseat001-default-rtdb.firebaseio.com",
+    "project_id": "movieseat001",
+    "storage_bucket": "movieseat001.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687641439921:android:6bd76dc8d233db518c3c90",
+        "android_client_info": {
+          "package_name": "com.example.a1202_movieseat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDStle3SyMXbYjQL52pxVQz-pTTNBnN6gE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
