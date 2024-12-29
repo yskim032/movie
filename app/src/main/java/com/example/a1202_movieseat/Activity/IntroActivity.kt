@@ -1,12 +1,10 @@
-package com.example.a1202_movieseat
+package com.example.a1202_movieseat.Activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.example.a1202_movieseat.databinding.ActivityIntroBinding
-
-
 
 class IntroActivity : AppCompatActivity() {
 //    앱에서 "IntroActivity"라는 이름의 **화면(페이지)**을 정의함.
@@ -26,14 +24,11 @@ class IntroActivity : AppCompatActivity() {
 //        조립한 화면을 사용자에게 보여줌.
 //        화면의 가장 큰 틀(root)을 이 액티비티에 설정하는 역할임.
 
-
 //        "이 코드는 XML 레이아웃을 뷰 바인딩으로 연결하여 IntroActivity 화면에 표시하는 역할을 함."
-
-
 
         // 올바른 메서드 이름으로 수정: setOnClickListener
         binding.startBtn.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             // 버튼 클릭 시 동작
 
         window.setFlags(

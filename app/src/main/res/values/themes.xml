@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme._1202_movieseat" parent="Base.Theme._1202_movieseat" />
+    <style name="circleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+
+    </style>
+
 </resources>
