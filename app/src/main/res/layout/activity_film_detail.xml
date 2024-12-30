@@ -20,16 +20,6 @@
             tools:ignore="MissingConstraints">
 
             <ImageView
-                android:id="@+id/backBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="48dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/back_dark" />
-
-            <ImageView
                 android:id="@+id/filmPic"
                 android:layout_width="0dp"
                 android:layout_height="600dp"
@@ -38,6 +28,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_dark" />
 
             <eightbitlab.com.blurview.BlurView
                 android:id="@+id/blurView"
@@ -177,7 +177,7 @@
             </eightbitlab.com.blurview.BlurView>
 
             <androidx.appcompat.widget.AppCompatButton
-                                    android:id="@+id/button"
+                                    android:id="@+id/buyTicketBtn"
                                     android:layout_width="291dp"
                                     android:layout_height="50dp"
                                     android:background="@drawable/orange_bg"

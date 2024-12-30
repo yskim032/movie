@@ -13,6 +13,9 @@
         android:theme="@style/Theme._1202_movieseat"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.SeatListActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.FilmDetailActivity"
             android:exported="false" />
         <activity

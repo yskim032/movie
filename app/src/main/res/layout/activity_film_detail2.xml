@@ -166,7 +166,7 @@
 
             <!-- Buy Ticket Button -->
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/buyTicketBtn"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:background="@drawable/orange_bg"
