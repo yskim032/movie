@@ -16,8 +16,9 @@ import java.time.LocalDate
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 
-
-class SeatListActivity(val name: String) : AppCompatActivity() {
+//SeatListActivity에 사용자 정의 생성자 val name: String이 선언되어 있음.
+//Android의 Activity는 매개변수가 없는 기본 생성자를 요구함. 사용자 정의 생성자가 포함되어 있으면 런타임에서 SeatListActivity를 초기화할 수 없어 오류가 발생함.
+class SeatListActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySeatListBinding
     private lateinit var film: Film
     private var price: Double = 0.0
@@ -54,7 +55,7 @@ class SeatListActivity(val name: String) : AppCompatActivity() {
 
         for(i in 0 until numberSeats){
             val SeatName=""
-            val SeatStatus=if(i==2|| i==20|| i==33|| i==41|| i==50|| i==72|| i==83) Seat.SeatStatus.UNAVAILABLE else Seat.SeatStatus.AVAILABLE
+            val SeatStatus=if(i==2|| i==20|| i==33|| i==41|| i==50|| i==72|| i==73) Seat.SeatStatus.UNAVAILABLE else Seat.SeatStatus.AVAILABLE
             seatList.add(Seat(SeatStatus, SeatName))
 
         }
