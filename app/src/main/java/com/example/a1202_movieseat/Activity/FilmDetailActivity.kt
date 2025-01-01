@@ -1,7 +1,6 @@
 
 package com.example.a1202_movieseat.Activity
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.ViewOutlineProvider
@@ -53,15 +52,16 @@ class FilmDetailActivity : AppCompatActivity() {
         binding.moviewtimeTxt.text = "${item.Year} - ${item.Time}"
         binding.moviewSummaryTxt.text = item.Description
 
+
         binding.backBtn.setOnClickListener {
             finish()
         }
 
-        binding.buyTicketBtn.setOnClickListener {
-            val intent = Intent(this, SeatListActivity::class.java)
-            intent.putExtra("film", item)
-            startActivity(intent)
-        }
+//        binding.buyTicketBtn.setOnClickListener {
+//            val intent = Intent(this, SeatListActivity::class.java)
+//            intent.putExtra("film", item)
+//            startActivity(intent)
+//        }
 
         val radius = 10f
         val decorView = window.decorView

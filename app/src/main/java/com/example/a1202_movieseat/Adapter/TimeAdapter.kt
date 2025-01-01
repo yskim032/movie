@@ -2,8 +2,8 @@ package com.example.a1202_movieseat.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import androidx.core.content.Contextcompat
 import com.example.a1202_movieseat.R
 import com.example.a1202_movieseat.databinding.ItemTimeBinding
 
@@ -19,11 +19,11 @@ class TimeAdapter(private val timeSlots:List<String>) : RecyclerView.Adapter<Tim
             if(selectedPosition==position){
 
                 binding.TextViewTime.setBackgroundResource(R.drawable.white_bg)
-                binding.TextViewTime.setTextColor(Contextcompat.getColor(itemView.context,R.color.black))
+                binding.TextViewTime.setTextColor(ContextCompat.getColor(itemView.context,R.color.black))
 
             }else{
                 binding.TextViewTime.setBackgroundResource(R.drawable.white_bg)
-                binding.TextViewTime.setTextColor(Contextcompat.getColor(itemView.context,R.color.white))
+                binding.TextViewTime.setTextColor(ContextCompat.getColor(itemView.context,R.color.white))
             }
 
             binding.root.setOnClickListener{
