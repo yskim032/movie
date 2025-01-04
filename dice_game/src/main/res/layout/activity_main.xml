@@ -7,18 +7,12 @@
     android:layout_height="match_parent">
 
 
-
-    <!-- 숫자 결과 표시 -->
-
-    <!-- 시작/정지 버튼 -->
-
-
     <ImageView
         android:id="@+id/diceImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/dice_1"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/dice_6"
         app:layout_constraintBottom_toTopOf="@+id/speedControl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -32,7 +26,6 @@
         android:layout_marginTop="70dp"
         android:max="98"
         android:progress="8"
-
         app:layout_constraintBottom_toTopOf="@+id/resultText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -71,24 +64,21 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.788" />
 
     <Button
         android:id="@+id/startStopButton"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="162dp"
+
+        android:layout_marginTop="20dp"
         android:text="Start"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timeText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

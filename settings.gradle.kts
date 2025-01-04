@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 rootProject.name = "1202_movieseat"
 include(":app")
 include(":dice_game")
+include(":horse_race")

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경마 경주"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <!-- 말 선택 -->
+    <Spinner
+        android:id="@+id/horseSelector"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 경주 버튼 -->
+    <Button
+        android:id="@+id/startRaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Race"
+        app:layout_constraintTop_toBottomOf="@+id/horseSelector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- 경주 트랙 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/raceTrack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/startRaceButton"
+        app:layout_constraintBottom_toTopOf="@+id/resultMessage">
+
+        <!-- 말 1 -->
+        <TextView
+            android:id="@+id/horseNumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1번  "
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/horse1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐎"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/horseNumber1"
+            app:layout_constraintTop_toTopOf="@+id/horseNumber1" />
+
+        <!-- 말 2 -->
+        <TextView
+            android:id="@+id/horseNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2번  "
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horseNumber1" />
+
+        <TextView
+            android:id="@+id/horse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐎"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/horseNumber2"
+            app:layout_constraintTop_toTopOf="@+id/horseNumber2" />
+
+        <!-- 말 3 -->
+        <TextView
+            android:id="@+id/horseNumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3번  "
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horseNumber2" />
+
+        <TextView
+            android:id="@+id/horse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐎"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/horseNumber3"
+            app:layout_constraintTop_toTopOf="@+id/horseNumber3" />
+
+        <!-- 말 4 -->
+        <TextView
+            android:id="@+id/horseNumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4번  "
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horseNumber3" />
+
+        <TextView
+            android:id="@+id/horse4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐎"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/horseNumber4"
+            app:layout_constraintTop_toTopOf="@+id/horseNumber4" />
+
+        <!-- 말 5 -->
+        <TextView
+            android:id="@+id/horseNumber5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5번  "
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horseNumber4" />
+
+        <TextView
+            android:id="@+id/horse5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐎"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/horseNumber5"
+            app:layout_constraintTop_toTopOf="@+id/horseNumber5" />
+
+        <!-- 말 6 -->
+        <TextView
+            android:id="@+id/horseNumber6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6번  "
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horseNumber5" />
+
+        <TextView
+            android:id="@+id/horse6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐎"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/horseNumber6"
+            app:layout_constraintTop_toTopOf="@+id/horseNumber6" />
+
+        <TextView
+            android:id="@+id/winCountsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1번 말: 0승\n2번 말: 0승\n3번 말: 0승\n4번 말: 0승\n5번 말: 0승\n6번 말: 0승"
+            android:textSize="16sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/horse6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 결과 메시지 -->
+    <TextView
+        android:id="@+id/resultMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="경주 결과가 여기에 표시됩니다."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

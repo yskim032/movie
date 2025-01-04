@@ -18,7 +18,7 @@
       </SelectionState>
       <SelectionState runConfigName="dice_game">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-01-03T13:08:00.387695700Z">
+        <DropdownSelection timestamp="2025-01-03T14:38:47.971816Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\kod03\.android\avd\Pixel_3a_API_34.avd" />
@@ -26,6 +26,9 @@
           </Target>
         </DropdownSelection>
         <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="horse_race">
+        <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
   </component>
